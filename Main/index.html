@@ -624,103 +624,188 @@ Cada proyecto es prueba de nuestra innovación</h2>
         <div class="container">
             <div class="row align-items-center justify-content-around">
                 <div class="col-md-12 col-lg-4">
-                    <div class="section-heading mb-5">
-                        <h2>Soluciones a tu medida
-                        <p class="lead">¿Listo para convertir tu idea en un negocio que crece sin límites?
-                    </div>
-                    <ul class="nav nav-tabs feature-tab pricing-tab border-bottom-0 mb-md-5 mb-lg-0" data-tabs="tabs">
-                    </ul>
-                </div>
-                <div class="col-md-12 col-lg-7">
-                    <div class="tab-content feature-tab-content">
-                        <div class="tab-pane active" id="monthly">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="card text-center single-pricing-pack">
-                                        <div class="pt-4"><h5>Basic</h5></div>
-                                        <div class="card-header py-4 border-0 pricing-header">
-                                            <div class="h1 text-center mb-0">$<span class="price font-weight-bolder">19</span></div>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
-                                                <li>Push Notifications</li>
-                                                <li>Data Transfer</li>
-                                                <li>SQL Database</li>
-                                                <li>Search & SEO Analytics</li>
-                                                <li>24/7 Phone Support</li>
-                                                <li>2 months technical support</li>
-                                                <li>2+ profitable keyword</li>
-                                            </ul>
-                                            <a href="#" class="btn outline-btn mb-3" target="_blank">Purchase now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="card popular-price text-center single-pricing-pack">
-                                        <div class="pt-4"><h5>Standard</h5></div>
-                                        <div class="card-header py-4 border-0 pricing-header">
-                                            <div class="h1 text-center mb-0">$<span
-                                                    class="price font-weight-bolder">49</span></div>
+  <div class="section-heading mb-5">
+    <h2>Soluciones a tu medida</h2>
+    <p class="lead">¿Listo para convertir tu idea en un negocio que crece sin límites?</p>
+  </div>
 
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
-                                                <li>Push Notifications</li>
-                                                <li>Data Transfer</li>
-                                                <li>SQL Database</li>
-                                                <li>Search & SEO Analytics</li>
-                                                <li>24/7 Phone Support</li>
-                                                <li>1 Year technical support</li>
-                                                <li>50+ profitable keyword</li>
-                                            </ul>
-                                            <a href="#" class="btn solid-btn mb-3" target="_blank">Purchase now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="yearly">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="card text-center single-pricing-pack">
-                                        <div class="pt-4"><h5>Basic</h5></div>
-                                        <div class="card-header py-4 border-0 pricing-header">
-                                            <div class="h1 text-center mb-0">$<span class="price font-weight-bolder">199</span></div>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
-                                                <li>Push Notifications</li>
-                                                <li>Data Transfer</li>
-                                                <li>SQL Database</li>
-                                                <li>Search & SEO Analytics</li>
-                                                <li>24/7 Phone Support</li>
-                                                <li>2 months technical support</li>
-                                                <li>2+ profitable keyword</li>
-                                            </ul>
-                                            <a href="#" class="btn outline-btn mb-3" target="_blank">Purchase now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="card popular-price text-center single-pricing-pack">
-                                        <div class="pt-4"><h5>Standard</h5></div>
-                                        <div class="card-header py-4 border-0 pricing-header">
-                                            <div class="h1 text-center mb-0">$<span
-                                                    class="price font-weight-bolder">549</span></div>
+  <ul class="nav nav-tabs feature-tab pricing-tab border-bottom-0 mb-md-5 mb-lg-0" data-tabs="tabs">
+  </ul>
+</div>
 
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="list-unstyled text-sm mb-4 pricing-feature-list">
-                                                <li>Push Notifications</li>
-                                                <li>Data Transfer</li>
-                                                <li>SQL Database</li>
-                                                <li>Search & SEO Analytics</li>
-                                                <li>24/7 Phone Support</li>
-                                                <li>1 Year technical support</li>
-                                                <li>50+ profitable keyword</li>
-                                            </ul>
-                                            <a href="#" class="btn solid-btn mb-3" target="_blank">Purchase now</a>
-                                        </div>
+<div class="col-md-12 col-lg-7">
+  <div class="tab-content feature-tab-content">
+    <div class="tab-pane active" id="monthly">
+      <div class="row align-items-center justify-content-between">
+
+       <style>
+  /* Contenedor flex para controlar separación exacta entre cards */
+  .cards-row {
+    display: flex;
+    gap: 1cm; /* separación exacta solicitada */
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* Cada columna se calcula para ocupar la mitad menos la mitad de la separación */
+  .card-col {
+    flex: 0 0 calc(50% - 0.5cm);
+    max-width: calc(50% - 0.5cm);
+    box-sizing: border-box;
+  }
+
+  /* Mantener estilo visual de la card (copiando las mejoras previas) */
+  .single-blog-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease;
+    will-change: transform;
+    box-shadow: 0 6px 18px rgba(2, 18, 28, 0.06);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .single-blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(2, 18, 28, 0.10);
+  }
+
+  .single-blog-card .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .single-blog-card .card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    flex: 1 1 auto;
+  }
+
+  .single-blog-card .card-title a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+
+  .single-blog-card .card-text {
+    margin: 0;
+    line-height: 1.45;
+    text-align: justify;
+    color: rgba(4,47,52,0.88);
+    font-size: .95rem;
+  }
+
+  .single-blog-card .btn {
+    margin-top: auto;
+    align-self: stretch;
+    text-align: center;
+    font-weight: 600;
+    padding: .62rem .9rem;
+    border-radius: 10px;
+  }
+
+  /* Responsive: en pantallas pequeñas, las cards ocupan 100% y la separación cambia a 1rem */
+  @media (max-width: 767.98px) {
+    .cards-row {
+      gap: 1rem;
+    }
+    .card-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .single-blog-card .card-img-top {
+      height: 160px;
+    }
+  }
+</style>
+
+<!-- CONTENEDOR con separación exacta entre cards -->
+<div class="row align-items-center justify-content-between">
+  <div class="cards-row" style="width:100%;">
+    <!-- CARD 1: Emprendedor -->
+    <div class="card-col">
+      <article class="single-blog-card card border-0 shadow-sm"
+               role="region"
+               aria-labelledby="card-emprendedor-title"
+               itemscope itemtype="http://schema.org/Service">
+
+        <!-- IMAGEN (arriba) -->
+        <figure class="card-img-top m-0">
+          <img src="img/emprendedor.png"
+               alt="Equipo desarrollando una app para emprendedores"
+               class="card-img-top img-fluid w-100"
+               loading="lazy">
+        </figure>
+
+        <div class="card-body">
+         
+
+          <h3 class="h5 mb-1 card-title" id="card-emprendedor-title">
+            <a href="#">Emprendedor</a>
+          </h3>
+
+          <p class="card-text" itemprop="description">
+            En ILEVEN acompañamos a emprendedores con soluciones digitales que simplifican procesos, automatizan tareas y convierten los datos en decisiones inteligentes para hacer crecer su negocio. Diseñamos MVPs, automatizamos flujos y entregamos métricas accionables.
+          </p>
+
+          <a href="#contacto?segment=emprendedor"
+             class="btn solid-btn mb-3"
+             role="button"
+             aria-label="Impulsa tu idea">Impulsa tu idea
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- CARD 2: Empresa -->
+    <div class="card-col">
+      <article class="single-blog-card card border-0 shadow-sm"
+               role="region"
+               aria-labelledby="card-empresa-title"
+               itemscope itemtype="http://schema.org/Service">
+
+        <!-- IMAGEN (arriba) -->
+        <figure class="card-img-top m-0">
+          <img src="img/empresa.png"
+               alt="Oficina moderna con equipo trabajando en integración de sistemas"
+               class="card-img-top img-fluid w-100"
+               loading="lazy">
+        </figure>
+
+        <div class="card-body">
+
+
+          <h3 class="h5 mb-1 card-title" id="card-empresa-title">
+            <a href="#">Empresa</a>
+          </h3>
+
+          <p class="card-text" itemprop="description">
+            Optimizamos procesos, protegemos tu información, desarrollamos el talento y centralizamos los datos para que tu empresa crezca con eficiencia e innovación. Implementamos integraciones, fortalecemos seguridad y habilitamos análisis que impulsan decisiones.
+          </p>
+
+          <a href="#contacto?segment=empresa"
+             class="btn solid-btn mb-3"
+             role="button"
+             aria-label="Haz crecer tu empresa">
+            Haz crecer tu empresa
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+
+  
+                        
                                     </div>
                                 </div>
                             </div>
@@ -828,10 +913,10 @@ Cada proyecto es prueba de nuestra innovación</h2>
                 <h4 class="step-title">Perú</h4>
                 <div class="location-details">
                     <p><strong>Chiclayo (CIX):</strong> Av. José Leonardo Ortiz 1234, Parque Industrial — Chiclayo. Edificio D, Piso 2</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+José+Leonardo+Ortiz+1234,+Parque+Industrial+—+Chiclayo.+Edif.+D,+Piso+2" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa Chiclayo</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Av.+José+Leonardo+Ortiz+1234,+Parque+Industrial+—+Chiclayo.+Edif.+D,+Piso+2" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa </a>
                     
                     <p><strong>Lima:</strong> Calle República 455, Distrito Industrial — Lima. Torre A, Oficina 704</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Calle+República+455,+Distrito+Industrial+—+Lima.+Torre+A,+Oficina+704" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa Lima</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Calle+República+455,+Distrito+Industrial+—+Lima.+Torre+A,+Oficina+704" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa </a>
                 </div>
             </div>
 
@@ -846,7 +931,7 @@ Cada proyecto es prueba de nuestra innovación</h2>
                 <h4 class="step-title">Colombia</h4>
                 <div class="location-details">
                     <p><strong>Barranquilla:</strong> Cra. 54 #80-20, Zona Franca — Barranquilla. Parque Empresarial, Piso 1</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Cra.+54+%2380-20,+Zona+Franca+—+Barranquilla.+Parque+Empresarial,+Piso+1" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa Barranquilla</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Cra.+54+%2380-20,+Zona+Franca+—+Barranquilla.+Parque+Empresarial,+Piso+1" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa</a>
                 </div>
             </div>
 
@@ -862,7 +947,7 @@ Cada proyecto es prueba de nuestra innovación</h2>
                 <h4 class="step-title">Estados Unidos</h4>
                 <div class="location-details">
                     <p><strong>Miami (FL):</strong> 200 Biscayne Blvd NE, Suite 500 — Miami, FL 33131</p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=200+Biscayne+Blvd+NE,+Suite+500+—+Miami,+FL+33131" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa Miami</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=200+Biscayne+Blvd+NE,+Suite+500+—+Miami,+FL+33131" target="_blank" rel="noopener noreferrer" class="step-link-small">Ver mapa </a>
                 </div>
             </div>
         </div>
